@@ -1,0 +1,127 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    user-select: none;
+    background-image: url('peakpx.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    margin-left: 1.8em;
+    padding: 20px;
+    height: 450px;
+    width: 680px;
+    border-radius: 8px;
+    background-image: linear-gradient(to left bottom,blue ,rgb(4, 255, 4),red,yellow,orange);
+    box-shadow:0px 13px 20px #000000;
+}
+
+.content {
+    width: 100%;
+    margin-top: 1.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row button {
+    width: 100px;
+    height: 60px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    border-radius: 4px;
+    transition: .1s;
+    box-shadow: 5px 5px 8px #00000020,
+        -5px -5px 8px #000000b0;
+}
+
+.row button:hover {
+    box-shadow: inset 5px 5px 8px rgba(255, 255, 255, 0.676),
+        inset -5px -5px 8px #ffffffb3;
+    background: #fff;
+}
+
+.display #screen {
+    margin-bottom: .5em;
+    width: 660px;
+    height: 70px;
+    font-size: 35px;
+    outline: none;
+    border: none;
+    text-align: right;
+    padding-right: .5em;
+    background: #ecf0f3;
+    border-radius: 6px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+        inset -8px -8px 8px #ffffff;
+}
+
+#eval {
+    background: #33ccff;
+    color: #fff;
+    box-shadow: inset 5px 5px 8px #66d9ff,
+        inset -5px -5px 8px #00ace6;
+}
+
+#eval:hover {
+    box-shadow: inset 5px 5px 8px #00ace6,
+        inset -5px -5px 8px #00ace6;
+}
+
+#ac {
+    background: #33cc33;
+    color: #fff;
+}
+
+#ac:hover {
+    box-shadow: inset 5px 5px 8px #2eb82e,
+        inset -5px -5px 8px #33cc33;
+}
+
+#ce {
+    background: #ff3399;
+    color: #fff;
+}
+
+#ce:hover {
+    box-shadow: inset 5px 5px 8px #e60073,
+        inset -5px -5px 8px #ff3399;
+}
+@media screen and (max-width:420px){
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image: url('bg2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .container {
+        height: 560px;
+        width: 290px;
+        margin-right: 30px;
+        border-radius: 8px;
+        background-image: linear-gradient(to left bottom,blue ,rgb(4, 255, 4),red,yellow,orange);
+        box-shadow:0px 13px 20px #000000;
+    }
+    .row button {
+        width: 35px;
+        height: 84px;
+        font-size: 16px;
+    }
+    .display #screen {
+        width: 270px;
+        height: 70px;
+        font-size: 35px;
+    }
+}
